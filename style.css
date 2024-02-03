@@ -1,0 +1,57 @@
+body {
+    background-color: lightpink;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    position: relative;
+}
+
+#moveableObject {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#instructionText {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#heartButton {
+    font-size: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: lightpink;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#secondObject {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('bow.jpg'); /* Replace with the actual path to your bow image */
+    background-size: 100% 100%; /* Adjust as needed */
+    visibility: hidden;
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bow {
+    width: 50%;
+    height: 50%;
+}
